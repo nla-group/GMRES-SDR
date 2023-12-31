@@ -2,9 +2,9 @@
 
 This repository contains files accompanying the [paper](https://arxiv.org/abs/2311.14206) listed at the bottom of this page. More specifically, the repository contains implementations of GMRES-SDR, GMRES-DR, and GCRO-DR. 
 
-Run `test_stokes_single.m` and `test_stokes_multiple.m` to reproduce the two plots in Figure 6.1 of the paper.
+Run `test_stokes_single.m` and `test_stokes_multiple.m` to reproduce the two plots in Figure 6.1 of the paper. You'll need to download the file `vas_stokes_1M.mat` from https://sparse.tamu.edu/VLSI/vas_stokes_1M.
 
-GMRES_SDR requires MATLAB's Signal Processing Toolbox for the `dct()` function when the default sketching operator (subsampled discrete cosine transform) is used. It is possible to use other sketching operators by passing a `param.hS` function handle to `gmres_sdr.m`.
+GMRES-SDR requires MATLAB's Signal Processing Toolbox for the `dct()` function when the default sketching operator (subsampled discrete cosine transform) is used. It is possible to use other sketching operators by passing a `param.hS` function handle to `gmres_sdr.m`.
 
 ## Reference 
 ```
